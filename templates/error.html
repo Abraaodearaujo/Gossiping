@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Erro</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f8d7da; color: #721c24; }
+    .error-box {
+      background: #f5c6cb;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    a { color: #721c24; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <h1>Ops!</h1>
+    <p>{{ message }}</p>
+    <p><a href="/">Voltar para o feed</a></p>
+  </div>
+</body>
+</html>

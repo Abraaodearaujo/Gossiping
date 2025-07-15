@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #424242;
+  color: #dfdfdf;
+}
+
+h1, h2 {
+  color: #dfdfdf;
+}
+
+textarea, input[type="text"], input[type="file"] {
+  padding: 30px;
+  width: 90%;
+  margin: 5px 0;
+  border-radius: 7px;
+}
+
+button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d8ddb;
+}
+
+.post {
+  background: #3f3f3f;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+img {
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+a{
+  color: #ccc;
+}

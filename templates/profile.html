@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+  <meta charset="UTF-8">
+  <title>@{{ username }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Perfil de @{{ username }}</h1>
+  <a href="/">← Voltar ao feed</a>
+  <div id="profile-posts">
+    {% for content, created_at, image in posts %}
+      <div class="post">
+        <p><strong>@{{ username }}</strong> - {{ created_at }}</p>
+        <p>{{ content }}</p>
+        {% if image %}
+          <img src="/{{ image }}" alt="Imagem do post" style="max-width: 200px;"><br>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
