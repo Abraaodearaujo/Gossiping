@@ -13,7 +13,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 # Banco de dados
 def init_db():
-    conn = sqlite3.connect('twitter.db')
+    conn = sqlite3.connect('database.db', timeout=30, check_same_thread=False)
     c = conn.cursor()
     
     c.execute('''CREATE TABLE IF NOT EXISTS users (
