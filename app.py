@@ -236,7 +236,7 @@ def reset_db():
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     
-    # ⚠️ Executa a limpeza total do banco (comente essa linha após rodar 1 vez)
+
     #reset_db()
 
     # Recria as tabelas com estrutura correta
