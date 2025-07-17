@@ -5,17 +5,17 @@
 <link rel="stylesheet" href="/static/login.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-  <h1>Login</h1>
-  <form method="POST">
-    <input name="username" placeholder="Usuário" required>
-    <input name="password" type="password" placeholder="Senha" required>
-    <button type="submit">Entrar</button>
-  </form>
-
-  {% if error %}
-    <p style="color: red; margin-top: 10px;">{{ error }}</p>
-  {% endif %}
-
-  <p><a href="/register">Criar conta</a></p>
-</body>
+  <div id="box">
+    <h1>Login</h1>
+    <form method="POST">
+      <input name="username" placeholder="Usuário" required>
+      <input name="password" type="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    {% if error %}
+      <p style="color: red; margin-top: 10px;">{{ error }}</p>
+    {% endif %}
+    <p><a href="/register">Criar conta</a></p>
+    </body>
+  </div>
 </html>
