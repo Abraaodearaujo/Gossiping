@@ -18,7 +18,7 @@
     <h1>Gossiping</h1>
     <p>Bem-vindo, <strong>{{ session['username'] }}</strong>! <a class="logout" href="/logout">Sair</a></p>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" action="/post" enctype="multipart/form-data">
         <textarea name="content" placeholder="O que você está pensando?" required></textarea>
         <input type="file" name="image">
         <button type="submit">Publicar</button>
