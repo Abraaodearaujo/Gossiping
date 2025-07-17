@@ -62,7 +62,7 @@ def init_db():
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
     if 'user_id' not in session:
         return redirect('/login')
